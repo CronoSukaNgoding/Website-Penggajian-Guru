@@ -1,0 +1,35 @@
+.toast-body {
+    margin: 80px 20px;
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    border-radius: 4px;
+    padding: 16px 17px;
+    margin-bottom: 10px;
+    background: var(--light);
+    justify-content: space-between;
+    animation: show_toast 0.3s ease forwards;
+}
+
+@keyframes show_toast {
+    0% {
+        transform: translateX(100%);
+    }
+    40% {
+        transform: translateX(-5%);
+    }
+    80% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .toast-body {
+        max-width: 50%;
+        font-size: 12px;
+    }
+}
