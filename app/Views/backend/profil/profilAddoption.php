@@ -60,6 +60,12 @@
                             value="" autocomplete="off" required>
                     </div>
 
+                    <div class="form-group floating-label-form-group">
+                        <label for="avatar">Pas Foto</label>
+                        <input type="file" class="form-control" id="avatar" name="avatar" placeholder="Pas Foto"
+                            value="" autocomplete="off" required>
+                    </div>
+
                     <div class=" flex-wrap gap-2 ">
                         <button type="submit " class="btn btn-primary waves-effect waves-light ">Simpan</button>
                         <button type="button " class="btn btn-secondary waves-effect waves-light ">Batal</button>

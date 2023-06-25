@@ -92,7 +92,7 @@
 						<li class="dropdown dropdown-user nav-item">
 							<a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
 								<span class="avatar avatar-online"><img
-										src="/assets/images/portrait/small/profil-circle-512.png"
+										src="<?= base_url('user/avatar/'.$user->avatar) ?>"
 										alt="avatar"></span><?= $user->fullname?></a>
 							<div class="dropdown-menu dropdown-menu-right">
 								<div class="arrow_box_right">

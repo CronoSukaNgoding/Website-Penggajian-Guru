@@ -186,6 +186,10 @@
 <!-- font awesome kit -->
 <script src="https://kit.fontawesome.com/4ac50859ba.js" crossorigin="anonymous"></script>
 
+<!-- <script>
+    $("#toast").delay(2000).fadeOut('slow');
+</script> -->
+
 </body>
 <!-- END: Body-->
 

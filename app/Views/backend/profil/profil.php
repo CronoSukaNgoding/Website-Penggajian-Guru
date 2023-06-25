@@ -7,6 +7,11 @@
 
                 <h4 class="card-title">Informasi Dasar</h4>
                 <p class="card-title-desc">*Diwajibkan mengisi biodata yang tertera</p>
+                <?php if (session()->getFlashData("gagal-upload")): ?>                         
+                    <div class="toast-body bg-danger position-fixed top-0 end-0 p-3 text-light" id="toast" style="z-index:9999;">
+                        <strong> <?=session()->getFlashData("gagal-upload")?> </strong> 
+                    </div> 
+                <?php endif;?>
 
                 <form action="<?=base_url("/profil/updateprofil/". $user->user_id)?>" method="post" enctype="multipart/form-data">
                     <?= csrf_field(); ?>
@@ -58,6 +63,12 @@
                         <label for="nohp">Nomor HP</label>
                         <input type="number" class="form-control" id="nohp" name="nohp" placeholder="Nomor HP"
                             value="<?= $result->nohp;?>" autocomplete="off" required>
+                    </div>
+
+                    <div class="form-group floating-label-form-group">
+                        <label for="avatar">Pas Foto</label>
+                        <input type="file" class="form-control" id="avatar" name="avatar" placeholder="Pas Foto"
+                            value="" autocomplete="off" required>
                     </div>
 
                     <div class=" flex-wrap gap-2 ">
